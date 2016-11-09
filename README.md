@@ -166,7 +166,7 @@ Note that the admob ads are configured inside `onDeviceReady()`. This is because
       if (isAppForeground) {
         if (e.adType === admob.AD_TYPE.INTERSTITIAL) {
           console.log("An interstitial has been loaded and autoshown. If you want to load the interstitial first and show it later, set 'autoShowInterstitial: false' in admob.setOptions() and call 'admob.showInterstitialAd();' here");
-        } else if (e.adType === admob.AD_TYPE_BANNER) {
+        } else if (e.adType === admob.AD_TYPE.BANNER) {
           console.log("New banner received");
         }
       }
